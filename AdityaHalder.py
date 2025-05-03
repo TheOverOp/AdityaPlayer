@@ -106,7 +106,7 @@ except Exception:
     logs.info("⚠️ 'MONGO_DB_URL' - Not Valid !!")
     sys.exit()
 
-mongodb = adb_cli.adityaplayer
+mongodb = adb_cli.Anon
 
 if OWNER_ID == 0:
     logs.info("⚠️ 'OWNER_ID' - Not Found !!")
@@ -119,8 +119,8 @@ if LOG_GROUP_ID == 0:
 
 
 
-chatsdb = mongodb.tgchats
-usersdb = mongodb.tgusers
+chatsdb = mongodb.chats
+usersdb = mongodb.tgusersdb
 
 
 
